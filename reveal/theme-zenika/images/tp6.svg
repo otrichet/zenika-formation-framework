@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 100 100" enable-background="new 0 0 100 100" preserveAspectRatio="xMaxYMid meet">
+  <defs>
+    <filter id="shadow" x="0" y="0" width="150%" height="150%">
+      <feOffset result="offOut" in="SourceAlpha" dx="0.5" dy="0.5" />
+      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="0.5" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>
+  </defs>
+  <g id="svg_1" style="font:OpenSans Regular;text-align:center;">
+     <rect x="0" y="0" height="98" width="98"
+      rx="5" ry="5" 
+      stroke="none"
+      fill="#79A603" filter="url(#shadow)"/>
+    <text fill="#fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="round" stroke-linecap="round" x="40" y="60" id="text-tp" font-size="40" font-family="serif" text-anchor="middle" xml:space="preserve" stroke="#000000">TP</text>
+    <text fill="#fff" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="75" y="70" id="svg_5" font-size="30" font-family="serif" text-anchor="middle" xml:space="preserve" stroke="#000000">6</text>
+  </g>
+</svg>
