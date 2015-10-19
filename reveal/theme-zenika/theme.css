@@ -26,7 +26,7 @@
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
-body {
+ body {
   background: white;
 }
 
@@ -82,35 +82,35 @@ body {
 
 .reveal .slides table th, .reveal .slides table td {
   padding: 0px 10px
-;}
+  ;}
 
-.reveal .slides table {
-  margin: 15px 0;
-  box-shadow: none;
-  border: 1px solid #b30c37;
-  border-left: 5px solid #b30c37;
-  border-collapse: collapse;
-}
-.reveal .slides table tr td {
-  border: 1px solid #AAAAAA;
-}
-.reveal .slides table tr th {
-  border: 1px solid #AAAAAA;
-  border-bottom: 5px solid #b30c37;
-  //background-color: #AAAAAA;
-  color : #000000;
-}
+  .reveal .slides table {
+    margin: 15px 0;
+    box-shadow: none;
+    border: 1px solid #b30c37;
+    border-left: 5px solid #b30c37;
+    border-collapse: collapse;
+  }
+  .reveal .slides table tr td {
+    border: 1px solid #AAAAAA;
+  }
+  .reveal .slides table tr th {
+    border: 1px solid #AAAAAA;
+    border-bottom: 5px solid #b30c37;
+    //background-color: #AAAAAA;
+    color : #000000;
+  }
 
-.reveal .slides table.no-border,
-.reveal .slides table.no-border tr td,
-.reveal .slides table.no-border tr th {
-  border: none;
-}
+  .reveal .slides table.no-border,
+  .reveal .slides table.no-border tr td,
+  .reveal .slides table.no-border tr th {
+    border: none;
+  }
 
 /*********************************************
  * HEADERS
  *********************************************/
-.reveal h1 {
+ .reveal h1 {
   margin-top: 5%;
   width: 600px;
   float: right;
@@ -141,7 +141,7 @@ body {
 /*********************************************
  * CONTENT
  *********************************************/
-.reveal em {
+ .reveal em {
   color: #b30c37;
   font-style: normal;
 }
@@ -172,7 +172,7 @@ body {
 /*********************************************
  * CODE
  *********************************************/
-.reveal pre {
+ .reveal pre {
   margin: 15px 0;
   box-shadow: none;
   border: 1px solid #b30c37;
@@ -201,9 +201,25 @@ body {
  * SPECIALS PAGES
  *********************************************/
 
-.reveal section.page-title {
-  background: transparent center center no-repeat url('images/title-background.png');
-  background-size: 80%;
+ .reveal section.page-title {
+  background: #af1e3a no-repeat url('images/slide-background-white.svg');
+}
+
+.reveal section.page-title h1:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;  
+  height: 100%;
+}
+.reveal section.page-title h1 {
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  float: none;
+}
+.reveal section.page-title h1 img {
+  display: inline-block;
 }
 
 .reveal section.page-title ul {
@@ -212,87 +228,96 @@ body {
 
 .reveal section.page-questions {
   background: transparent center center no-repeat url('./images/questions.svg');
-  background-size: 30%;
+  background-size: 60%;
 }
 
-.reveal section.page-tp1 {
-  background: transparent center center no-repeat url('images/tp1.svg');
-  background-size: 30%;
+.reveal section [class^="page-tp"]:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;  
+  height: 80%;
+}
+.reveal section [class^="page-tp"] {
+  background: transparent center center no-repeat url('./images/tp.svg');
+  background-size: 60%;
+
+}
+.reveal section [class^="page-tp"]:after {
+  display: inline-block;
+  color: #af1e3a;
+  font-size: 50px;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
 }
 
-.reveal section.page-tp2 {
-  background: transparent center center no-repeat url('./images/tp2.svg');
-  background-size: 30%;
+.reveal section.page-tp1:after {
+  content: "TP1";
+}
+.reveal section.page-tp2:after {
+  content: "TP2";
+}
+.reveal section.page-tp3:after {
+  content: "TP3";
+}
+.reveal section.page-tp4:after {
+  content: "TP4";
+}
+.reveal section.page-tp5:after {
+  content: "TP5";
+}
+.reveal section.page-tp6:after {
+  content: "TP6";
+}
+.reveal section.page-tp7:after {
+  content: "TP7";
+}
+.reveal section.page-tp8:after {
+  content: "TP8";
+}
+.reveal section.page-tp9:after {
+  content: "TP9";
+}
+.reveal section.page-tp10:after {
+  content: "TP10";
+}
+.reveal section.page-tp11:after {
+  content: "TP11";
+}
+.reveal section.page-tp12:after {
+  content: "TP12";
+}
+.reveal section.page-tp13:after {
+  content: "TP13";
+}
+.reveal section.page-tp14:after {
+  content: "TP14";
+}
+.reveal section.page-tp15:after {
+  content: "TP15";
+}
+.reveal section.page-tp16:after {
+  content: "TP16";
+}
+.reveal section.page-tp17:after {
+  content: "TP17";
+}
+.reveal section.page-tp18:after {
+  content: "TP18";
+}
+.reveal section.page-tp19:after {
+  content: "TP19";
+}
+.reveal section.page-tp20:after {
+  content: "TP20";
 }
 
-.reveal section.page-tp3 {
-  background: transparent center center no-repeat url('./images/tp3.svg');
-  background-size: 30%;
-}
-
-.reveal section.page-tp4 {
-  background: transparent center center no-repeat url('./images/tp4.svg');
-  background-size: 30%;
-}
-
-.reveal section.page-tp5 {
-  background: transparent center center no-repeat url('./images/tp5.svg');
-  background-size: 30%;
-}
-
-.reveal section.page-tp6 {
-  background: transparent center center no-repeat url('./images/tp6.svg');
-  background-size: 30%;
-}
-
-.reveal section.page-tp7 {
-  background: transparent center center no-repeat url('./images/tp7.svg');
-  background-size: 30%;
-}
-
-.reveal section.page-tp8 {
-  background: transparent center center no-repeat url('./images/tp8.svg');
-  background-size: 30%;
-}
-
-.reveal section.page-tp9 {
-  background: transparent center center no-repeat url('./images/tp9.svg');
-  background-size: 30%;
-}
-
-.reveal section.page-tp10 {
-  background: transparent center center no-repeat url('./images/tp10.svg');
-  background-size: 30%;
-}
-
-.reveal section.page-tp11 {
-  background: transparent center center no-repeat url('./images/tp11.svg');
-  background-size: 30%;
-}
-
-.reveal section.page-tp12 {
-  background: transparent center center no-repeat url('./images/tp12.svg');
-  background-size: 30%;
-}
-
-.reveal section.page-tp13 {
-  background: transparent center center no-repeat url('./images/tp13.svg');
-  background-size: 30%;
-}
-
-.reveal section.page-tp14 {
-  background: transparent center center no-repeat url('./images/tp14.svg');
-  background-size: 30%;
-}
-
-.reveal section.page-tp15 {
-  background: transparent center center no-repeat url('./images/tp15.svg');
-  background-size: 30%;
-}
 /*********************************************
  * LINKS
  *********************************************/
-.reveal a:not(.image) {
+ .reveal a:not(.image) {
   color: #b30c37;
   text-decoration: none;
   -webkit-transition: color .15s ease;
@@ -320,7 +345,7 @@ body {
 /*********************************************
  * IMAGES
  *********************************************/
-.reveal section img {
+ .reveal section img {
   display: block;
   margin: 30px auto;
 }
@@ -340,8 +365,8 @@ body {
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
-.reveal .controls div.navigate-left,
-.reveal .controls div.navigate-left.enabled {
+ .reveal .controls div.navigate-left,
+ .reveal .controls div.navigate-left.enabled {
   border-right-color: #b30c37;
 }
 
@@ -379,7 +404,7 @@ body {
 /*********************************************
  * PROGRESS BAR
  *********************************************/
-.reveal .progress {
+ .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
 }
 
@@ -395,7 +420,7 @@ body {
 /*********************************************
  * FOOTER (style copied from reveal.css -> .reveal .slide-number)
  *********************************************/
-.reveal footer, .reveal .slides footer {
+ .reveal footer, .reveal .slides footer {
   position: absolute;
   bottom: 15px;
   font-size: 12px;
@@ -423,7 +448,7 @@ body {
  * ALERTS (taken from bootstrap)
  * Copyright (c) 2011-2014 Twitter, Inc
  *********************************************/
-.reveal .alert {
+ .reveal .alert {
   padding: 15px;
   margin-bottom: 20px;
   border: 1px solid transparent;
