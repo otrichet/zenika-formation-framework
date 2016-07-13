@@ -206,7 +206,7 @@
 }
 
 .reveal section.page-title h1 {
-  height: 90%; 
+  height: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -231,7 +231,7 @@
 .reveal section [class^="page-tp"]:before {
   content: '';
   display: inline-block;
-  vertical-align: middle;  
+  vertical-align: middle;
   height: 80%;
 }
 .reveal section [class^="page-tp"] {
@@ -309,6 +309,11 @@
 }
 .reveal section.page-tp20:after {
   content: "TP20";
+}
+
+.reveal section.page-demo {
+  background: transparent center center no-repeat url('./images/demo.png');
+  background-size: 50%;
 }
 
 /*********************************************
@@ -484,4 +489,10 @@
   color: #a94442;
   background-color: #f2dede;
   border-color: #ebccd1;
+}
+
+/** incusion de font-awesome avec reveal : cf https://github.com/FortAwesome/Font-Awesome/pull/2131 */
+.reveal .fa {
+  font-family: 'FontAwesome';
+  font-style: normal;
 }
