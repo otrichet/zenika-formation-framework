@@ -57,8 +57,7 @@ gulp.task('copybase', ['clean'], function () {
  * Copie du contenu le Reveal.js dans le dossier de build
  */
 gulp.task('copyreveal', ['clean'], function () {
-
-  return gulp.src('./node_modules/reveal.js/!(node_modules)/**/*')
+  return gulp.src('./node_modules/zenika-formation-framework/node_modules/reveal.js/!(node_modules)/**/*')
     .pipe(gulp.dest('./build/reveal.js'));
 });
 
