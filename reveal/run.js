@@ -94,12 +94,13 @@
 
       var request = new XMLHttpRequest();
       var jsonSupport = false;
-      try {
-        request.responseType = 'json';
-        jsonSupport = true;
-      } catch (error) {
-        console.error(error);
-      }
+//       try {
+//         request.responseType = 'json';
+//         jsonSupport = true;
+//       } catch (error) {
+//           console.log("XXXX");
+//         console.error(error.stack);
+//       }
 
       console.log('Insert slides');
 
@@ -127,7 +128,7 @@
       };
 
       request.onerror = function (event) {
-        console.error(event);
+        console.error(JSON.stringify(event));
         reject('Erreur chargement des slides.');
       };
 

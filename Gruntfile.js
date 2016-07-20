@@ -328,7 +328,7 @@ module.exports = function (grunt) {
 
     var revealFullPath = path.join(frameworkPath, 'reveal/plugins/print-pdf/print-pdf.js');
 
-    var debugMode = false;
+    var debugMode = 'true';
 
     var childArgs = [
       revealFullPath,

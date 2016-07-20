@@ -27,7 +27,7 @@
 
   // Debug mode
   var debug = system.args[3] === 'true';
-  console.log('debug:', !!debug);
+  console.log('debug:' +  !!debug);
 
   // PDF path and file name
   var slideFile = system.args[2] || 'slides.pdf';
@@ -35,7 +35,7 @@
     slideFile += '.pdf';
   }
 
-  console.log('Printing PDF...', Date.now());
+  console.log('Printing PDF...' +  Date.now());
   console.log('Pour un meilleur rendu : https://github.com/hakimel/reveal.js#pdf-export');
 
   var urlPrint = system.args[1] || 'index.html?print-pdf';
@@ -55,7 +55,7 @@
           page.render(slideFile + '.screenshot.png');
         }
 
-        console.log('Save PDF.', Date.now());
+        console.log('Save PDF.' + Date.now());
         page.render(slideFile, {
           format: 'pdf',
           quality: '100'
@@ -69,35 +69,35 @@
   // TO HELP DEBUG
   page.onConsoleMessage = function (msg) {
     if (debug) {
-      console.log('Phantom console: ', msg);
+      console.log('Phantom console: ' +  msg);
     }
   };
   page.onResourceError = function (resourceError) {
     if (debug) {
-      console.log('Unable to load resource: ', JSON.stringify(resourceError, null, 2));
+      console.log('Unable to load resource: ' +  JSON.stringify(resourceError, null, 2));
     }
   };
   page.onResourceReceived = function (response) {
     if (debug) {
       if (response.stage === "end") {
-        console.log('Received:', response.id, Date.now(), response.stage, response.url);
+        console.log('Received:' +  response.id + ' ' + Date.now() + ' ' + response.stage + ' ' + response.url);
       }
-      // console.log('Received:', JSON.stringify(response, null, 2));
+      // console.log('Received:' +  JSON.stringify(response, null, 2));
     }
   };
   page.onResourceRequested = function (requestData, networkRequest) {
     if (debug) {
-      console.log('Requested:', requestData.id, Date.now(), requestData.url);
-      // console.log('Requested:', JSON.stringify(requestData, null, 2));
-      // console.log('networkRequest:', networkRequest);
+      console.log('Requested:' +  requestData.id + ' ' + Date.now() + ' ' + requestData.url);
+      // console.log('Requested:' +  JSON.stringify(requestData, null, 2));
+      // console.log('networkRequest:' +  networkRequest);
     }
   };
   page.onResourceTimeout = function (request) {
-    console.log('Resource Timeout:', JSON.stringify(request, null, 2));
+    console.log('Resource Timeout:' +  JSON.stringify(request, null, 2));
   };
   page.onLoadFinished = function (status) {
     if (debug) {
-      console.log('Load finished. Status:', status);
+      console.log('Load finished. Status:' +  status);
     }
   };
 
